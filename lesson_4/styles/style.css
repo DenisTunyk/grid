@@ -10,6 +10,7 @@ h1 {
 }
 
 .title {
+  margin-bottom: 40px;
   padding: 40px 0 10px 0;
   text-align: center;
   font-size: 26px;
@@ -24,12 +25,10 @@ h1 {
 }
 
 .wrapper {
-  /* padding: 30px;
-  width: 500px;
+  padding: 30px;
   margin: 0 auto;
   display: grid;
-  gap: 5px; */
-  display: flex;
+  gap: 5px;
 }
 
 .wrapper > div {
@@ -40,8 +39,36 @@ h1 {
   color: #d9480f;
 }
 
-/* .wrapper {
+.wrapper {
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  gap: 40px 30px;
+  grid-gap: 10px;
+}
+
+.item {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-gap: 10px;
+  border: 1px solid #ccc;
+}
+
+.sub-item {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* .wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 } */
